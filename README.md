@@ -1,6 +1,9 @@
 # Small_Group_Project
 ### Group Members: Charles Hedeen, Autum, Brock Vriesman, Audric Perger
 
+<<<<<<< HEAD
+fake edit
+=======
 ## Project Idea: 
 -Use COVID-19 data from multiple websites. We found data on : test results (postitive and negative), deaths, hospital beds (available, occupied, etc.).
 -We plan to break the database down to be sorted and merged by state.
@@ -17,5 +20,6 @@
 
 ## Type of Database:
 -We will use the Mongo database to publish our findings.
+>>>>>>> 76f991f9c4326384241b48df961f48176c6f8818
 
 test
