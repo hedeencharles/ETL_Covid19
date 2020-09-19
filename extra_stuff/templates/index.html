@@ -12,20 +12,16 @@
 <body>
     <div class="container-fluid">
         <div class="jumbotron text-center">
-            <h1>Visit the...</h1>
-            <p>Beach. Rainforest. Volcano. Tree House. Sloths.</p>
+            <h1>welcome to 2020:</h1>
+            <p>people are dying. the world is on fire.</p>
             <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
         </div>
-        <!-- {% if sickly %}
-        <table>
-            {% for key, value in covid_data.items %}
-            <tr>
-                <th> {{ key }} </th>
-                <td> {{ value }} </td>
-            </tr>
-            {% endfor %}
-        </table>
-        {% endif %} -->
+        {% if sickly %}
+        <h2>The typical weather in Costa Rica is:</h2>
+        <h3>State: {{ sickly.state_name }}</h3>
+        <h3>Total Cases: {{ sickly.total_cases }}</h3>
+        <h3>New Cases: {{sickly.new_cases }}</h3>
+        {% endif %}
     </div>
     </div>
 </body>
