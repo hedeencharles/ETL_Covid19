@@ -1,9 +1,7 @@
 # Small_Group_Project
 ### Group Members: Charles Hedeen, Autum, Brock Vriesman, Audric Perger
 
-<<<<<<< HEAD
-fake edit
-=======
+
 ## Project Idea: 
 -Use COVID-19 data from multiple websites. We found data on : test results (postitive and negative), deaths, hospital beds (available, occupied, etc.).
 -We plan to break the database down to be sorted and merged by state.
@@ -20,7 +18,8 @@ fake edit
 
 ## Type of Database:
 -We will use the Mongo database to publish our findings.
->>>>>>> 76f991f9c4326384241b48df961f48176c6f8818
+
+test
 
 ### Using MongoDB:
 Code in the 'CSV_to_MongoDB', if run from beginning to end, will create a Mongo database on your local machine which will allow you to analyize the data independently.
@@ -38,4 +37,3 @@ Steps to take to create database on local machine:
 
 Querying the database:
 * Basic querying code is available in the 'CSV_to_MongoDB' notebook. Code that gives you all of the contents in the database as well as starter code for querying based on field values.
-    
