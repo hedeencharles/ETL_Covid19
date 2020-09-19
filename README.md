@@ -46,7 +46,8 @@ Steps to take to create database on local machine:
 * Inside 'CSV_to_MongoDB', run the Kernel (If you want to run cell by cell, click into the top cell and click SHIFT + ENTER down the entire list of cells)
 * Navigate back to the 'MongoDB Compass Community App' and click the refresh button in the top left corner
 ![Refresh DB List](/Readme_files/Images/Refresh_DB_List.png)
-* You should now see a database titled '  final_testing_beds_db' and within that database, a collection titled 'testing_beds'
+* You should now see a database titled '  final_testing_beds_db' and within that database, a collection titled 'testing_beds', and a list of documents as shown below
+![Final Data Display](/Readme_files/Images/Final_Data_Display.png)
 
 Querying the database:
 * Basic querying code is available in the 'CSV_to_MongoDB' notebook. Code that gives you all of the contents in the database as well as starter code for querying based on field values.
