@@ -30,7 +30,7 @@ We also had to merge a csv with state abbreviations with the test results in ord
 
 The third csv file we used was data on the number of estimated beds available and occupied by Covid patients. From this csv file, we will have information on: inpatient beds occupied estimate, percent estimate and total number/percentage of beds available. This work can be found in the estimatedBeds.ipynb.
 
-We then merged our two csv we crafted into one pandas dataframe that will include all the information from both tables. The final csv that will be deployed to our Mongo database will be broken up by state and include data from 08/12/2020 - 09/12/2020. 
+We then merged our two csv we crafted into one pandas dataframe that will include all the information from both tables. The final csv that will be deployed to our Mongo database will be broken up by state and include data from 08/12/2020 - 09/12/2020. Since we decided to merge the two csv files, we will be using a NON-RELATIONAL data base (mongodb). 
 
 
 # L - Load
