@@ -1,5 +1,5 @@
-# Small_Group_Project
-### Group Members: Charles Hedeen, Autum, Brock Vriesman, Audric Perger
+# ETL Small Group Project
+### Group Members: Charles Hedeen, Autum Perconti, Brock Vriesman, Audric Perger
 
 
 # E- Extract
