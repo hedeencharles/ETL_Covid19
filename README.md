@@ -53,6 +53,7 @@ Querying the database:
 * Basic querying code is available in the 'CSV_to_MongoDB' notebook. Code that gives you all of the contents in the database as well as starter code for querying based on field values.
 
 Web scraper and Flask app:
+
 The final part of our project was to approach the question from a different angle to accomplish something similar but noticably different. Instead of pulling in large amounts of data from CSV files to create a large database of COVID-19 testing data across states, what about trying to scrape just a few selective fields of data off the website that provides the same data? In this case, from the URL https://covidtracking.com/data (the same source as the CSV files from above) using the beautifulsoup and splinter modules, and pulled out just the state name, total cases, and new cases (as updated daily). This data was stored as a list of dictionaries that was then converted into a Mongo database and used for a flask app to display the scraped data in a bootstrap HTML table on a localhost server.
 
 This process mirrors the same basic ETL steps taken using CSVs using pandas, just in a noticably different way. The extraction part is obviously the most differnt. Instead of selecting CSVs containing lots of fields that need to be merged into a pandas dataframe and cleaned of unwanted data, scraping the website into a beautifulsoup object provides all the information on the webpage in a format that's virtually impossible to read and needs to be traversed with splinter to pull out the wanted information.
