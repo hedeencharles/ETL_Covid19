@@ -66,4 +66,4 @@ This Extraction, Transformation, and Loading process looks very different from t
 
 ideally, the Mongo DB would be dropped every time the scrape was run to ensure the data displayed was actually up to date and not leftover from a previous scrape. However, this was not able to be accomplished in time for submission of this porject, and instead the page now displays the date and time of the most recent scrape. 
 
-This data scraped is only one half of what would be required to fullfil the requirements and, given enough time, the first part of the process would be replicated with another set of relevant data scraped from elsewhere to be combined together to be a full ETL, but it serves as a working skeleton for what is possible using web scrapping and the presentation using flask.
+This data scraped is only one half of what would be needed to fullfil the requirements and, given enough time, the first part of the process would be replicated with another set of relevant data scraped from elsewhere and combined together to be a full ETL, but it serves as a working skeleton for what is possible using web scrapping and the presentation using flask.
