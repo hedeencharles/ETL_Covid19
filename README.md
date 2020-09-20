@@ -14,6 +14,7 @@
 * Websites:
     * https://covidtracking.com/data - daily testing data by state
     * https://worldpopulationreview.com/states/state-abbreviations - states names and abbreviations
+    * https://healthdata.gov/dataset/covid-19-estimated-patient-impact-and-hospital-capacity-state/resource/1051acef-72b2-4fbc#{} - estimated beds data
 
 ### Type of Database:
 -We will use the Mongo database to publish our findings.
