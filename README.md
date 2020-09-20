@@ -1,19 +1,34 @@
+# Small_Group_Project
+### Group Members: Charles Hedeen, Autum, Brock Vriesman, Audric Perger
+
+## Project Idea:
+-Use COVID-19 data from multiple websites. We found data on : test results (postitive and negative), deaths, hospital beds (available, occupied, etc.).
+-We plan to break the database down to be sorted and merged by state.
+
+=======
 # ETL Small Group Project
 ### Group Members: Charles Hedeen, Autum Perconti, Brock Vriesman, Audric Perger
 
 
 # E- Extract
-### Project Idea: 
+### Project Idea:
 * Use COVID-19 data from multiple websites. We found data on : test results (postitive and negative), deaths, hospital beds (available, occupied, etc.).
 -We plan to break the database down to be sorted and merged by state.
+
+[healthdata.gov](https://healthdata.gov/dataset/covid-19-estimated-patient-impact-and-hospital-capacity-state/resource/1051acef-72b2-4fbc#{view-grid:{columnsWidth:[{column:!state,width:206},{column:!collection_date,width:243},{column:!Inpatient++Beds++Occupied++Estimated,width:368)
+[Covidtracking.com](https://covidtracking.com/data)
+
+
+    Websites:
+    https://covidtracking.com/data - daily testing data by state
+    
+    https://worldpopulationreview.com/states/state-abbreviations - states names and abbreviations
+
+    https://healthdata.gov/dataset/covid-19-estimated-patient-impact-and-hospital-capacity-state/resource/1051acef-72b2-4fbc#{view-grid:{columnsWidth:[{column:!state,width:206},{column:!collection_date,width:243},{column:!Inpatient++Beds++Occupied++Estimated,width:368
 
 ### Type of Data:
  * We found two CSV files containing data on : test results (postitive and negative, deaths, hospital beds (available, occupied, etc.).
  * We will merge these two files on states to have data by each state available.
-
-* Websites:
-    * https://covidtracking.com/data - daily testing data by state
-    * https://worldpopulationreview.com/states/state-abbreviations - states names and abbreviations
 
 ### Type of Database:
 -We will use the Mongo database to publish our findings.
@@ -30,7 +45,7 @@ We also had to merge a csv with state abbreviations with the test results in ord
 
 The third csv file we used was data on the number of estimated beds available and occupied by Covid patients. From this csv file, we will have information on: inpatient beds occupied estimate, percent estimate and total number/percentage of beds available. This work can be found in the estimatedBeds.ipynb.
 
-We then merged our two csv we crafted into one pandas dataframe that will include all the information from both tables. The final csv that will be deployed to our Mongo database will be broken up by state and include data from 08/12/2020 - 09/12/2020. Since we decided to merge the two csv files, we will be using a NON-RELATIONAL data base (mongodb). 
+We then merged our two csv we crafted into one pandas dataframe that will include all the information from both tables. The final csv that will be deployed to our Mongo database will be broken up by state and include data from 08/12/2020 - 09/12/2020. Since we decided to merge the two csv files, we will be using a NON-RELATIONAL data base (mongodb).
 
 
 # L - Load
