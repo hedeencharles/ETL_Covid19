@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mars Data</title>
+    <title>COVID Data</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -16,11 +17,32 @@
             <p>people are dying. the world is on fire.</p>
             <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
         </div>
+
+
         {% if sickly %}
-        <h2>The typical weather in Costa Rica is:</h2>
-        <h3>State: {{ sickly.state_name }}</h3>
-        <h3>Total Cases: {{ sickly.total_cases }}</h3>
-        <h3>New Cases: {{sickly.new_cases }}</h3>
+        <p>Most Recent scrape:</p>
+        <script>
+            var current_time = new Date();
+            document.write(current_time.toLocaleString());
+            document.write("<br>");
+        </script>
+
+        <table class='table table-dark'>
+            <thead class="thead-light"></thead>
+            <tr>
+                <th>State_Name</th>
+                <th>Total_Cases</th>
+                <th>New_Cases</th>
+            </tr>
+            {% for item in sickly %}
+            <tr>
+                <th> {{ item.name }} </th>
+                <td> {{ item.total_cases }} </td>
+                <td> {{ item.new_cases }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+
         {% endif %}
     </div>
     </div>
