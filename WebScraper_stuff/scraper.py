@@ -22,23 +22,30 @@ def scrape_info():
     html = browser.html
     soup = bs(html, 'html.parser')
     #print(soup.prettify())
- 
-    covid_data = []
-    all_data = soup.find_all('div', class_='cs_bF')
-    print(all_data)
 
-    for d in all_data:
+    covid_data = []
+    my_xpath = '/html/body/div/div[1]/main/div[2]/div/div[8]/div[1]/div'
+    state_divs = browser.find_by_xpath(my_xpath)
+
+    state_soup = bs(state_divs.html, 'html.parser')
+
+    #print(state_soup)
+
+    for state in range(len(state_soup)):
         
-        header_name = d.find('div', attrs={'class':'state-header cz_5'})
-        total_cases = d.find('div', attrs={'class':'bV_fQ'}).text
-        new_cases = d.find('span', attrs={'class':'bV_fQ'}).text
+        state_total_cases_xpath = f'/html/body/div/div[1]/main/div[2]/div/div[8]/div[1]/div/div[{state + 1}]/div[2]/div[1]/div[2]/div/div/div[2]'
+        state_new_cases_xpath = f'/html/body/div/div[1]/main/div[2]/div/div[8]/div[1]/div/div[{state + 1}]/div[2]/div[1]/div[2]/div/div/div[3]/div[1]/span[2]'
         
-        state_name = header_name.find('a').text
+        state_name_xpath = f'/html/body/div/div[1]/main/div[2]/div/div[8]/div[1]/div/div[{state + 1}]/div[1]/h3/a'
+        
+        state_name = browser.find_by_xpath(state_name_xpath).text
+        state_total_cases = browser.find_by_xpath(state_total_cases_xpath).text
+        state_new_cases = browser.find_by_xpath(state_new_cases_xpath).text
         
         state_data = {
             'name' : state_name,
-            'total_cases' : total_cases,
-            'new_cases' : new_cases
+            'total_cases' : state_total_cases,
+            'new_cases' : state_new_cases
                      }
         
         print(state_data)
@@ -48,6 +55,6 @@ def scrape_info():
 
     return covid_data
 
-covid_data = scrape_info()
+#covid_data = scrape_info()
 
-print(covid_data)
+#print(covid_data)
