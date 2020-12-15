@@ -8,7 +8,7 @@
 -We plan to break the database down to be sorted and merged by state.
 
 ### Type of Data:
- * We found two CSV files containing data on : test results (postitive and negative, deaths, hospital beds (available, occupied, etc.).
+ * We found two CSV files containing data on : test results (postitive and negative, deaths), and hospitalbeds (available, occupied, etc.).
  * We will merge these two files on states to have data by each state available.
 
 * Websites:
