@@ -7,11 +7,19 @@
 * We sourced COVID-19 data from multiple websites. We found data on : test results (positive and negative), deaths, hospital beds (available, occupied, etc.). The database will be broken down to be sorted and merged by state.
 * Additionally, we will create a Python Web Scraper App to automate the <i>extract</i> process.
 
+<<<<<<< HEAD
 # *E* - Extract data 
 ### <u>Data</u>:
  * We sourced datasets with data on: **test results** (positive and negative, deaths) and **hospital beds** (available, occupied, etc.).
  * **State abbreviations** data will be used to combine datasets. 
 * Sources:
+=======
+### Type of Data:
+ * We found two CSV files containing data on : test results (postitive and negative, deaths), and hospitalbeds (available, occupied, etc.).
+ * We will merge these two files on states to have data by each state available.
+
+* Websites:
+>>>>>>> cace90de4b17c2766dff13f300b9364962d1d60a
     * https://covidtracking.com/data - daily testing data by state
     * https://healthdata.gov/dataset/covid-19-estimated-patient-impact-and-hospital-capacity-state/resource/1051acef-72b2-4fbc#{} - estimated number of beds data
     * https://worldpopulationreview.com/states/state-abbreviations - states names and abbreviations
